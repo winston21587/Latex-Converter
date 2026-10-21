@@ -1,0 +1,1 @@
+For diagonal movement (1, 1): $$\text{Length} = 1.414$$ $$\frac{dx}{\text{len}} = \frac{1}{1.414} \approx 0.7071$$ $$\frac{dy}{\text{len}} = \frac{1}{1.414} \approx 0.7071$$

@@ -1,0 +1,6 @@
+# LaTeX Translator runs using only Python standard library modules!
+# No external runtime dependencies are strictly required.
+#
+# Note for Linux users:
+# If tkinter is missing from your minimal Python install, install via apt:
+# sudo apt install python3-tk

@@ -1,0 +1,18 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Source files (normalize to LF)
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+
+# Shell scripts must have LF line endings to run on Linux/macOS
+*.sh text eol=lf
+
+# Windows batch scripts must have CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf

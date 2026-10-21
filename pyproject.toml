@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latex-translator"
+version = "1.0.0"
+description = "Two-way converter between LaTeX math and readable Unicode text with GUI and CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Winston" }
+]
+keywords = [
+    "latex",
+    "math",
+    "unicode",
+    "converter",
+    "translator",
+    "gui",
+    "cli",
+    "tkinter"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Topic :: Utilities"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pyinstaller>=6.0.0",
+    "ruff>=0.4.0",
+]
+
+[project.scripts]
+latex-translator = "latex_to_text:main"
+
+[project.urls]
+"Homepage" = "https://github.com/tabotabowinston/latex-translator"
+"Bug Tracker" = "https://github.com/tabotabowinston/latex-translator/issues"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+exclude = [
+    ".git",
+    "build",
+    "dist",
+    "__pycache__",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
